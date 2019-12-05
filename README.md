@@ -45,9 +45,9 @@ rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
 rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
             for md_filename in files:
                 indent = '  ' * level
-                rel_dir = rel_dir.replace('.\\','.')     # Remove '.\\' from the front of the file link
-                rel_dir = rel_dir.replace('\\','/')      # Replace '\\' from the file link path with '/'
-                md_filename = md_filename.replace('.md','')            # Remove the '.md' from the file name and link
+                rel_dir = rel_dir.replace('.\\','.')            # Remove '.\\' from the front of the file link
+                rel_dir = rel_dir.replace('\\','/')             # Replace '\\' from the file link path with '/'
+                md_filename = md_filename.replace('.md','')     # Remove the '.md' from the file name and link
                 if wikilinks:
                     md_lines.append('{0} {3} [[{2}{1}]]\n'.format(indent,
                                                                   os.path.splitext(md_filename)[0],
