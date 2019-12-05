@@ -14,7 +14,7 @@
 - **Directory Label**
 ```
 
-### Nested file link
+### Nested file name and link
 - Original output: Name.md
 ```
 - [Name.md](.\\Directory1\\Directory2\\Name.md)
@@ -25,6 +25,11 @@
 ```
 
 ## Code Changes
+### Edits to Directory Label
+```
+```
+### Edits to nested file name and link
+- Original code at line 114
 ```python
 rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
             for md_filename in files:
@@ -40,7 +45,7 @@ rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
                                                                      rel_dir,
                                                                      TOC_LIST_PREFIX))
 ```
-
+- Modified code (added 3 lines)
 ```python
 rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
             for md_filename in files:
