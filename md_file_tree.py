@@ -116,6 +116,7 @@ def create_index(cwd, headings=False, wikilinks=False):
                 indent = '  ' * level
                 rel_dir = rel_dir.replace('.\\','.')
                 rel_dir = rel_dir.replace('\\','/')
+                md_filename = md_filename.replace('.md','')
                 if wikilinks:
                     md_lines.append('{0} {3} [[{2}{1}]]\n'.format(indent,
                                                                   os.path.splitext(md_filename)[0],
@@ -123,14 +124,11 @@ def create_index(cwd, headings=False, wikilinks=False):
                                                                   TOC_LIST_PREFIX))
                 else:
                     md_lines.append('{0} {3} [{1}]({2}{1})\n'.format(indent,
-                                                                     md_filename.replace('.md',''),
-                                                                     #md_filename,
+                                                                     md_filename,
                                                                      rel_dir,
                                                                      TOC_LIST_PREFIX))
                 if headings:
-                    #results = get_headers(os.path.join(root, md_filename))
                     results = get_headers(os.path.join(root, md_filename))
-                    #s.replace(' Qui', 'key ')
                     if len(results) > 0:
                         min_header_level = min(results, key=lambda e: e[0])[0]
                         for header in results:
