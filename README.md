@@ -37,7 +37,7 @@ if len(files) > 0:
                                                             os.path.basename(root),
                                                             TOC_LIST_PREFIX))
 ```
-Modified code (removed 1 symbol)
+- Modified code (removed 1 symbol)
 ```
 if len(files) > 0:
             level = root.count(os.sep) - base_level
