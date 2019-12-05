@@ -2,6 +2,18 @@
 
 **Note: This is a modification of https://github.com/amaiorano/md-to-toc
 
+## Justification for Changes
+- Goal: Use this script to create a link based TOC index on the Home page of a **GitLab Wiki**
+- This script gets *really* close to what I was looking (98% of the hard work)
+- 3 items in the way this script formats the TOC conflicts with what GitLab Wiki pages require
+  - (1) The file path needed a '.' at the beginning rather than '.\\'
+  - (2) The directory separators in the file link needed to be '/' rather than '\\'
+  - (3) The file name in the path needed to be 'Name" rather than 'Name.md'
+- 2 cosmetic changes to the original format were needed 
+  - (1) The end of each directory label had a '/' hanging off the end in GitLab's syntax; I wanted to remove that
+  - (2) The name text that labels the file path has '.md' at the end; I just wanted the name itself
+   
+
 ## Cosmetic Changes
 
 ### Directory Label
