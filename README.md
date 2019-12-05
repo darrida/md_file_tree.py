@@ -26,7 +26,27 @@
 
 ## Code Changes
 ### Edits to Directory Label
+- Original code at line 106
+```python
+if len(files) > 0:
+            level = root.count(os.sep) - base_level
+            indent = '  ' * level
+            if root != cwd:
+                indent = '  ' * (level - 1)
+                md_lines.append('{0} {2} **{1}/**\n'.format(indent,
+                                                            os.path.basename(root),
+                                                            TOC_LIST_PREFIX))
 ```
+Modified code (removed 1 symbol)
+```
+if len(files) > 0:
+            level = root.count(os.sep) - base_level
+            indent = '  ' * level
+            if root != cwd:
+                indent = '  ' * (level - 1)
+                md_lines.append('{0} {2} **{1}**\n'.format(indent,                  # Removed '/' after the {1}
+                                                            os.path.basename(root),
+                                                            TOC_LIST_PREFIX))
 ```
 ### Edits to nested file name and link
 - Original code at line 114
