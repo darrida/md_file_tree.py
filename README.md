@@ -5,21 +5,21 @@
 ## Changes
 
 ### Directory Label
-- Original output:
+- Original output: **Directory Label/**
 ```
 - **Directory Label/**
 ```
-- Modified output:
+- Modified output: **Directory Label**
 ```
 - **Directory Label**
 ```
 
 ### Nested file link
-- Original output:
+- Original output: Name.md
 ```
 [Name.md](.\\Directory1\\Directory2\\Name.md)
 ```
-- Mofified output:
+- Mofified output: Name
 ```
 [Name](.Directory1/Directory2/Name)
 ```
