@@ -25,7 +25,7 @@
 ```
 
 ## Code Changes
-```
+```python
 rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
             for md_filename in files:
                 indent = '  ' * level
@@ -41,7 +41,7 @@ rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
                                                                      TOC_LIST_PREFIX))
 ```
 
-```
+```python
 rel_dir = '.{1}{0}'.format(os.sep, root[base_len:])
             for md_filename in files:
                 indent = '  ' * level
