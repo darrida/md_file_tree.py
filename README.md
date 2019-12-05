@@ -6,7 +6,7 @@
 
 ### Directory Label
 - Original output:
-```python
+```
 - **Directory Label/**
 ```
 - Modified output:
@@ -16,7 +16,7 @@
 
 ### Nested file link
 - Original output:
-```python
+```
 [Name.md](.\\Directory1\\Directory2\\Name.md)
 ```
 - Mofified output:
