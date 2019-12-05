@@ -17,9 +17,9 @@
 ### Nested file link
 - Original output: Name.md
 ```
-[Name.md](.\\Directory1\\Directory2\\Name.md)
+- [Name.md](.\\Directory1\\Directory2\\Name.md)
 ```
 - Mofified output: Name
 ```
-[Name](.Directory1/Directory2/Name)
+- [Name](.Directory1/Directory2/Name)
 ```
