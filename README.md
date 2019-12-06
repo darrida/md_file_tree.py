@@ -1,6 +1,6 @@
 # GitLab Adaptation of md_file_tree.py
 
-**Note: This is a modification of https://github.com/amaiorano/md-to-toc
+**Note: This is a modification of https://github.com/amaiorano/md-to-toc. All credit for the vast majority of this script goes there.
 
 ## Justification for Changes
 - Goal: Use this script to create a link based TOC index on the Home page of a **GitLab Wiki**
